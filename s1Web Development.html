@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development | Growth Aspire</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      flex: 1;
+    }
+  
+    main {
+      flex: 1;
+    }
+  
+    header {
+      background-color: #002c57;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  
+    nav h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+  
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+  
+    .section h2 {
+      color: #002c57;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    .services {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+  
+    .service-item {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+  
+    .service-item h3 {
+      color: #002c57;
+      margin-top: 0;
+    }
+  
+    .service-item p {
+      line-height: 1.6;
+    }
+    img {
+  width: 120px;
+  height: auto;
+}
+img {
+  width: 100px;
+  height: auto;
+}
+
+  
+    footer {
+      text-align: left;
+      padding: 1.5rem;
+      background-color: rgba(0, 44, 87, 0.9);
+      color: white;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <header>
+    <nav>
+      <h1>Growth Aspire</h1>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4">Custom Websites That Help Your Business Grow</h1>
+      <p class="text-lg mb-6">From concept to launch — we build high-performing websites tailored to your business goals.</p>
+      <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Schedule a Free Consultation</a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-10 text-gray-800">Website Development Packages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Basic Package -->
+        <div class="flex flex-col border rounded-lg shadow-md p-6 bg-gray-50 text-center">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Basic</h3>
+          <p class="text-4xl font-bold text-gray-900 mb-4">$499</p>
+          <ul class="text-left space-y-2 text-gray-700 mb-6 flex-grow">
+            <li>✓ 1-3 Page Website</li>
+            <li>✓ Responsive Design</li>
+            <li>✓ Contact Form</li>
+            <li>✓ Basic SEO</li>
+            <li>✓ 1 Round of Revisions</li>
+          </ul>
+          <a href="contact.html" class="mt-auto inline-block bg-blue-800 text-white px-6 py-2 rounded hover:bg-blue-900 transition">Get Started</a>
+        </div>
+
+        <!-- Standard Package -->
+        <div class="flex flex-col border-2 border-blue-800 rounded-lg shadow-lg p-6 bg-white text-center">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Standard</h3>
+          <p class="text-4xl font-bold text-gray-900 mb-4">$899</p>
+          <ul class="text-left space-y-2 text-gray-700 mb-6 flex-grow">
+            <li>✓ 5-8 Page Website</li>
+            <li>✓ Custom Design</li>
+            <li>✓ Contact + Quote Forms</li>
+            <li>✓ Enhanced SEO</li>
+            <li>✓ CMS Integration</li>
+            <li>✓ 2 Rounds of Revisions</li>
+          </ul>
+          <a href="contact.html" class="mt-auto inline-block bg-blue-800 text-white px-6 py-2 rounded hover:bg-blue-900 transition">Get Started</a>
+        </div>
+
+        <!-- Premium Package -->
+        <div class="flex flex-col border rounded-lg shadow-md p-6 bg-gray-50 text-center">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Premium</h3>
+          <p class="text-4xl font-bold text-gray-900 mb-4">$1499+</p>
+          <ul class="text-left space-y-2 text-gray-700 mb-6 flex-grow">
+            <li>✓ 10+ Pages / Full Website</li>
+            <li>✓ Custom Design + Animations</li>
+            <li>✓ Blog + CMS + E-commerce (optional)</li>
+            <li>✓ Advanced SEO Optimization</li>
+            <li>✓ Performance & Security Setup</li>
+            <li>✓ Unlimited Revisions</li>
+          </ul>
+          <a href="contact.html" class="mt-auto inline-block bg-blue-800 text-white px-6 py-2 rounded hover:bg-blue-900 transition">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">What We Offer</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Custom Website Design -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Custom Website Design</h3>
+          <p class="text-gray-700">Tailored designs that reflect your brand and captivate your audience.</p>
+        </div>
+
+        <!-- Mobile-Responsive Development -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Mobile-Responsive Development</h3>
+          <p class="text-gray-700">Websites that look great and function perfectly on all devices.</p>
+        </div>
+
+        <!-- E-commerce Solutions -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">E-commerce Solutions</h3>
+          <p class="text-gray-700">Build powerful online stores with secure checkout and product management.</p>
+        </div>
+
+        <!-- CMS Development -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">CMS Development</h3>
+          <p class="text-gray-700">Manage your site content easily using platforms like WordPress or Webflow.</p>
+        </div>
+
+        <!-- Website Redesign -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Website Redesign</h3>
+          <p class="text-gray-700">Transform and modernize outdated websites for better performance and style.</p>
+        </div>
+
+        <!-- Speed Optimization -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Speed Optimization</h3>
+          <p class="text-gray-700">Enhance load times for improved SEO, UX, and lower bounce rates.</p>
+        </div>
+
+        <!-- API Integration -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">API Integration</h3>
+          <p class="text-gray-700">Seamlessly connect your site with third-party tools and services.</p>
+        </div>
+
+        <!-- Landing Pages -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">Landing Pages</h3>
+          <p class="text-gray-700">Focused, high-converting pages built for campaigns and lead capture.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Why Choose Us -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Why Choose Growth Aspire?</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto list-disc list-inside">
+        <li>Fast turnaround times</li>
+        <li>Mobile-first & SEO-friendly</li>
+        <li>Custom coded or CMS-based options</li>
+        <li>Secure, scalable, and user-friendly</li>
+        <li>Clear communication from start to finish</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">Tech We Work With</h2>
+    <p class="text-center max-w-3xl mx-auto mb-12 text-lg text-gray-600">We use industry-leading technologies to build high-quality, performance-driven websites tailored to your business needs.</p>
+    
+    <!-- Tech We Work With -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Tech We Work With</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
+      
+      <!-- HTML -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">HTML</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">CSS</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">React</p>
+      </div>
+
+      <!-- Next.js -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">Next.js</p>
+      </div>
+
+      <!-- WordPress -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/wordpress-icon.svg" alt="WordPress" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">WordPress</p>
+      </div>
+
+      <!-- Elementor -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="elementor-icon.png" alt="Elementor Logo">
+        <p class="text-gray-700 font-semibold">Elementor</p>
+      </div>
+
+      <!-- WooCommerce -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/woocommerce.svg" alt="WooCommerce" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">WooCommerce</p>
+      </div>
+
+      <!-- Webflow -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="webflow-icon.png" alt="Webflow Logo">
+        <p class="text-gray-700 font-semibold">Webflow</p>
+      </div>
+
+      <!-- Shopify -->
+      <div class="tech-icon bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out text-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="mx-auto mb-4 h-16">
+        <p class="text-gray-700 font-semibold">Shopify</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- FAQs -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">Frequently Asked Questions</h2>
+    <div class="space-y-6 max-w-3xl mx-auto">
+      
+      <!-- Accordion Item 1 -->
+      <div class="accordion-item border-b border-gray-300">
+        <h4 class="accordion-header font-bold text-lg flex justify-between items-center cursor-pointer py-4 text-gray-700 hover:text-gray-900 transition duration-300">
+          <span>How long does a project take?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-all duration-300 rotate-0 accordion-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </h4>
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="py-4 text-gray-600">Most websites are completed in 2–6 weeks depending on complexity.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 -->
+      <div class="accordion-item border-b border-gray-300">
+        <h4 class="accordion-header font-bold text-lg flex justify-between items-center cursor-pointer py-4 text-gray-700 hover:text-gray-900 transition duration-300">
+          <span>Do you provide hosting and domain?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-all duration-300 rotate-0 accordion-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </h4>
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="py-4 text-gray-600">We can assist with setup and connect you with trusted providers.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item border-b border-gray-300">
+        <h4 class="accordion-header font-bold text-lg flex justify-between items-center cursor-pointer py-4 text-gray-700 hover:text-gray-900 transition duration-300">
+          <span>Will my website be mobile-friendly?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-all duration-300 rotate-0 accordion-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </h4>
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="py-4 text-gray-600">Yes — all our sites are built to work on phones, tablets, and desktops.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Add Script for Accordion Functionality -->
+<script>
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
+    const icon = item.querySelector('.accordion-icon');
+
+    header.addEventListener('click', () => {
+      const isOpen = content.style.maxHeight;
+
+      // Close all open accordion items
+      accordionItems.forEach(otherItem => {
+        otherItem.querySelector('.accordion-content').style.maxHeight = null;
+        otherItem.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+      });
+
+      // If this item is not already open, open it
+      if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.maxHeight = null;
+        icon.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+</script>
+
+  </section>
+  <footer>
+    &copy; 2025 Growth Aspire. All rights reserved.
+  </footer>
+</body>
+</html>
+
+  <!-- Call to Action -->
+  <section id
+
+  

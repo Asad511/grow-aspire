@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growth Aspire - Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      flex: 1;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background-color: #002c57;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #002c57;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .services {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-item {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .service-item h3 {
+      color: #002c57;
+      margin-top: 0;
+    }
+
+    .service-item p {
+      line-height: 1.6;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: left;
+      padding: 1.5rem;
+      background-color: rgba(0, 44, 87, 0.9);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Growth Aspire</h1>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-white py-16 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+        <p class="text-lg mb-6">High-performing services tailored to your business goals.</p>
+      </div>
+    </section>
+
+    <!-- Services Offered -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service Item 1 -->
+      <a href="s1Web Development.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- Web Development Icon -->
+          <svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Development</h3>
+        <p class="text-gray-600">Custom websites designed with functionality and user experience in mind. We build fast, secure, and scalable solutions tailored to your brand.</p>
+      </a>
+      
+      <!-- Service Item 2 -->
+      <a href="s1seo.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- SEO Icon -->
+          <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 6h2v12h-2zM6 11h12v2H6z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">SEO</h3>
+        <p class="text-gray-600">We optimize your website to rank higher in search engines and attract organic traffic, boosting visibility and customer engagement.</p>
+      </a>
+      <!-- Service Item 3 -->
+      <a href="Digital Marketing.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- Email Marketing Icon -->
+          <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ads Campaigns</h3>
+        <p class="text-gray-600">Targeted ad campaigns on Google, Bing, Facebook, Instagram, TikTok, and LinkedIn designed to grow your customer base.</p>
+      </a>
+
+      
+
+      <!-- Service Item 4 -->
+      <a href="Lead Generation.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- Lead Generation Icon -->
+          <svg class="w-12 h-12 text-purple-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4 4m0 0l-4 4m4-4H6"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Lead Generation & Email Verification</h3>
+        <p class="text-gray-600">We help your business grow by identifying and attracting high-quality leads through strategic and data-driven methods.</p>
+      </a>
+
+      <!-- Service Item 3 -->
+      <a href="EmailMarketing.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- Email Marketing Icon -->
+          <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Marketing</h3>
+        <p class="text-gray-600">Targeted campaigns that convert. We create, manage, and optimize email strategies to grow your subscriber base and drive revenue.</p>
+      </a>
+
+      <!-- Service Item 6 -->
+      <a href="Social Media Management.html" class="service-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <!-- Social Media Management Icon -->
+          <svg class="w-12 h-12 text-indigo-500" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l7 7-7 7m0-7h13"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media Management</h3>
+        <p class="text-gray-600">We create engaging content, manage your accounts, and grow your community across all major platforms to enhance your brand online.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    &copy; 2025 Growth Aspire. All rights reserved.
+  </footer>
+</body>
+</html>
